@@ -1,18 +1,50 @@
-NyaySathi — Legal Aid Chatbot
-A Human-Friendly Guide
-NyaySathi (न्याय साथी) is a free, open-source chatbot designed to be a supportive companion for individuals seeking general legal information in India. It was built using a combination of traditional information retrieval methods and modern AI. The bot provides helpful, informative answers to a wide range of common legal queries, but it is crucial to remember that its responses are for informational purposes only and do not constitute legal advice.
+# NyaySathi – Legal Aid Chatbot
 
-This chatbot was created with the core principle of accessibility. It does not require a compulsory API key to function. Its primary knowledge-based retrieval engine is a robust TF-IDF (Term Frequency-Inverse Document Frequency) model built using the popular scikit-learn library. This model has been trained on a comprehensive knowledge base of over 100 legal queries, allowing it to provide relevant and accurate answers without external services. For those who want to enhance the clarity and readability of the bot's responses, it offers an optional integration with OpenAI's large language models, like GPT-4o-mini, which can be enabled by providing your own API key. This hybrid approach ensures the bot is both self-sufficient and capable of delivering polished, high-quality responses when needed.
+## Overview  
+NyaySathi is a beginner-friendly legal aid chatbot designed to provide quick answers to common legal questions in India. It is based on a pre-built knowledge base of more than 100 frequently asked questions, covering areas such as criminal law, consumer protection, property disputes, family law, labor rights, cybercrime, and more.  
 
-Key Features
-Offline Knowledge Base: The chatbot's core functionality relies on a pre-trained TF-IDF model, making it highly efficient and independent of external API calls. This allows it to answer more than 100 legal queries.
+The chatbot works as a retrieval-based system: it compares the user’s query with stored questions and provides the closest possible answer. The application is built in Python and deployed using Streamlit, making it easy to access from any device.  
 
-Extensible Knowledge: The bot's knowledge can be easily expanded by uploading a simple CSV file with new legal questions and answers, allowing it to adapt and grow over time.
+**Disclaimer:** This chatbot is intended for educational and informational purposes only. It is not a substitute for professional legal advice. The responses may not be fully accurate, complete, or up-to-date. For serious legal issues, users must consult a qualified lawyer or legal authority.  
 
-Optional AI Polish: While it works perfectly fine on its own, you have the choice to connect an OpenAI API key to use a powerful LLM to rewrite and clarify the bot's answers, making them more human-like and easier to understand.
 
-Safety First: The chatbot is designed with a strong safety layer that detects and refuses to assist with any queries related to illegal activities, violence, or harmful actions.
+## Features  
+- Answers 100+ common legal questions relevant to Indian law.  
+- Provides fast and simple guidance for everyday legal issues.  
+- Built with Python, TF-IDF similarity, and Streamlit.  
+- Easy to extend: users can add more questions and answers to the knowledge base.  
+- Beginner-friendly code with step-by-step setup instructions.  
 
-User-Friendly Interface: Built with the Streamlit framework, the bot's interface is clean, modern, and easy to navigate. It allows for quick queries, includes a chat history, and provides the option to view the sources of its answers.
+How to Use :
 
-NyaySathi represents a blend of classic data science and modern AI, providing a reliable and responsible resource for general legal information without the need for constant internet access or paid services. It's a true testament to the power of open-source development in providing access to justice-related information for everyone
+-Open the chatbot in your browser after running or deploying.
+-Type your legal question in plain English.
+-If your query matches one of the 100+ stored questions, the chatbot will return the most relevant answer.
+-If the question is outside its scope, it will provide a safe fallback response advising to consult a lawyer. 
+
+Example Questions Supported :
+
+-How can I apply for free legal aid in India?
+-What are the rights of a tenant?
+-How do I file an FIR?
+-What is the procedure for getting bail?
+-What are my rights as a consumer if I receive a defective product?
+-How can I file a case for domestic violence?
+-What is the punishment for cyberbullying?
+-How can I file an RTI application?
+-What are the rights of women at the workplace?
+-What is the procedure for property registration?
+
+Future Improvements
+
+-Expand the knowledge base with more legal questions and answers.
+-Support regional languages.
+-Integrate advanced NLP models for better accuracy.
+-Add official legal aid APIs (if available).
+-Include multilingual voice input and output.
+
+License
+
+This project is for educational purposes only.
+No warranties are provided regarding the accuracy or completeness of the responses.
+Users should always consult a qualified legal professional for important matters
