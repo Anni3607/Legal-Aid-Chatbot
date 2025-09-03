@@ -15,14 +15,14 @@ The chatbot works as a retrieval-based system: it compares the user’s query wi
 - Easy to extend: users can add more questions and answers to the knowledge base.  
 - Beginner-friendly code with step-by-step setup instructions.  
 
-How to Use :
+## How to Use :
 
 -Open the chatbot in your browser after running or deploying.
 -Type your legal question in plain English.
 -If your query matches one of the 100+ stored questions, the chatbot will return the most relevant answer.
 -If the question is outside its scope, it will provide a safe fallback response advising to consult a lawyer. 
 
-Example Questions Supported :
+## Example Questions Supported :
 
 -How can I apply for free legal aid in India?
 -What are the rights of a tenant?
@@ -35,7 +35,7 @@ Example Questions Supported :
 -What are the rights of women at the workplace?
 -What is the procedure for property registration?
 
-Future Improvements
+## Future Improvements
 
 -Expand the knowledge base with more legal questions and answers.
 -Support regional languages.
@@ -43,7 +43,7 @@ Future Improvements
 -Add official legal aid APIs (if available).
 -Include multilingual voice input and output.
 
-License
+## License
 
 This project is for educational purposes only.
 No warranties are provided regarding the accuracy or completeness of the responses.
