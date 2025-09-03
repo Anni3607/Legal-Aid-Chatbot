@@ -1,4 +1,3 @@
-
 import os
 import json
 import time
@@ -153,7 +152,7 @@ with st.sidebar:
                 if "source" not in extra.columns:
                     extra["source"] = "User-provided"
                 # Append & rebuild vectorizer
-                global kb, vectorizer, X
+                # REMOVE THE FOLLOWING LINE: global kb, vectorizer, X
                 kb = pd.concat([kb, extra[["topic","question","answer","source"]]], ignore_index=True)
                 kb["blob"] = (kb["topic"].fillna("") + " " + kb["question"].fillna("") + " " + kb["answer"].fillna("")).map(_normalize)
                 vectorizer = TfidfVectorizer(ngram_range=(1,2), min_df=1, max_features=20000)
